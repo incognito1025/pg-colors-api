@@ -4,6 +4,9 @@ const cors = require("cors");
 const express = require("express");
 const colorsController = require("./controllers/colorsController.js");
 
+
+
+
 // CONFIGURATION
 const app = express();
 
@@ -11,12 +14,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ROUTES
+// ROUTES //landing page
 app.get("/", (req, res) => {
   res.send("Welcome to Colors App");
 });
 
-// Colors ROUTES
+// Colors ROUTES - when we use localhost:3003/colors, go ot colorsController and run code from there
 app.use("/colors", colorsController);
 
 // 404 PAGE
