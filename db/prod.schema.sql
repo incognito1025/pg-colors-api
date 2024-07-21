@@ -1,8 +1,8 @@
 -- prod_schema.sql
-DROP DATABASE IF EXISTS colors_prod;
-CREATE DATABASE colors_prod;
+DROP DATABASE IF EXISTS colors_prod_yz0p;
+CREATE DATABASE colors_prod_yz0p;
 
-\c colors_prod;
+\c colors_prod_yz0p;
 
 CREATE TABLE colors (
     id SERIAL PRIMARY KEY,
